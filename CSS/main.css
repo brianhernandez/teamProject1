@@ -57,21 +57,23 @@ table {
 
 
 body {
+    position: relative;
     background-image: url("../images/books_header_bg.jpg");
     background-repeat: repeat-x;
     font-family: Roboto;
+    padding-bottom: 30em;
 }
 
 
 /* Header */
 
-.mainHeading {
+.bannerContainer {
     margin: 0 auto;
     width: 50em;
     margin-top: 3em;
 }
 
-.mainHeading h1 {
+.mainHeader {
     font-family: "Roboto Slab";
     font-size: 1.9em;
     color: #fff;
@@ -79,47 +81,98 @@ body {
     padding-top: .3em;
 }
 
-.mainHeading .modern {
+ .modern {
     margin-top: 1em;
     word-spacing: .1em;
     color:#EAF3CC;
     font-weight:100;
 }
-.mainHeading p {
+.tagLine{
     margin-top: .5em;
     color:#769210;
  }
 
-.mainHeading img {
+.headLogo {
     float: left;
     padding-right: 1.2em;
     padding-left: 3.5em;
 }
 
 
+/* Search Box */
+
+.search {
+    width:41em;
+    margin: 0 auto;
+    margin-top: 1em;
+
+}
 
 
+
+input[type="text"] {
+    height: 2.2em;
+    width: 33em;
+    background-color:#CEDD9A;
+    color: #90A647;
+    border: none;
+    padding-left: 1em;
+    font-size: 1.2em;
+    outline: none;
+    border-radius:5px;
+}
+
+/* use another class on magnify image in search bar to add javascript click functionality later */
+
+.dem {
+    position: relative;
+    left: 37.4em;
+    top: 2.95em;
+    height: 2.8em;
+    width: 3.5em;
+    background-color: #fff;
+    border-radius: 5px;
+
+}
+
+/* Placeholder text color */
+
+::-webkit-input-placeholder {
+    color: #90A647;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #90A647;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #90A647;
+}
+
+:-ms-input-placeholder {
+    color: #90A647;
+}
 
 
 
 /* Nav Bar */
 
-nav ol {
+.navOl {
     list-style-type: none;
     margin: 0 auto;
-    margin-top:9.5em;
+    margin-top:3em;
     width: 65em;
     padding: 0;
     font-weight:400;
     font-family:"Roboto Slab";
 }
 
-nav ol li {
+.navList {
     float: left;
     padding: 1em;
 }
 
-nav ol li a {
+.navLinks {
     display: block;
     text-decoration: none;
     color:#929292;
@@ -130,3 +183,65 @@ nav a:hover {
     color:#A2C331;
 }
 
+
+/* Footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background:#3A3A3A;
+    height: 12em;
+
+}
+
+.logoContainer {
+    float: left;
+    width:25em;
+    margin-left: 13em;
+    margin-top: 4em;
+}
+
+.logoName {
+   font-family: "Roboto Slab";
+    color: #A9A9A9;
+   font-size: 1.2em;
+    font-weight: 500;
+   padding:.8em 0 0 3.5em;
+}
+
+.spanLogo {
+    color: #6E6E6E;
+    font-weight:400;
+}
+
+.footImg {
+    height: 3.1em;
+    float: left;
+}
+
+
+            /* Footer Right Side */
+
+
+.incContainer {
+    float: right;
+    margin-top:5em;
+    margin-right: 15em;
+    font-size: .9em;
+}
+
+.footDate {
+    color: #6E6E6E;
+}
+
+.contactEmail {
+    position: relative;
+    bottom: .5em;
+    color: #A9A9A9;
+    text-decoration: none;
+}
+
+.contactEmail:hover {
+    color:#A2C331;
+}
