@@ -184,6 +184,55 @@ nav a:hover {
 }
 
 
+/* Main Section */
+
+
+.main {
+    clear: left;
+    background:#F5F5F5;
+    padding: 1em 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.bookEntry {
+    margin: 3em auto;
+    width: 70em;
+    height: 30em;
+    background: #fff;
+
+}
+
+.bookImg {
+    float: right;
+    height: 30em;
+
+}
+
+.bookTitle {
+    padding: 1em;
+    font-size: 1.8em;
+}
+
+.bookSummary {
+    float: left;
+    margin-top: 4em;
+    width: 25em;
+    border-right: 1px #EDEDED solid ;
+}
+
+.summaryP {
+    line-height: 1.4em;
+    padding: 1em;
+}
+
+.summaryLink {
+    padding: 1em;
+    text-decoration: none;
+    color:#5497D3;
+}
+
+
 /* Footer */
 
 footer {
