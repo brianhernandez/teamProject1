@@ -31,7 +31,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    font-size: 100%;
 }
 ol, ul {
     list-style: none;
@@ -59,7 +58,7 @@ table {
 body {
     position: relative;
     background: url("../images/books_header_bg.jpg") repeat-x;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     padding-bottom: 12em;
 }
 
@@ -67,13 +66,12 @@ body {
 /* Header */
 
 .bannerContainer {
-    margin: 0 auto;
     width: 50em;
-    margin-top: 3em;
+    margin: 3em auto 0;
 }
 
 .mainHeader {
-    font-family: "Roboto Slab";
+    font-family: "Roboto Slab", serif;
     font-size: 1.9em;
     color: #fff;
     font-weight: 300;
@@ -102,8 +100,7 @@ body {
 
 .search {
     width:41em;
-    margin: 0 auto;
-    margin-top: 1em;
+    margin: 1em auto 0;
 
 }
 
@@ -158,12 +155,11 @@ input[type="text"] {
 
 .navOl {
     list-style-type: none;
-    margin: 0 auto;
-    margin-top:3em;
+    margin: 3em auto 0;
     width: 65em;
     padding: 0;
     font-weight:400;
-    font-family:"Roboto Slab";
+    font-family: "Roboto Slab", serif;
 }
 
 .navList {
@@ -189,15 +185,13 @@ nav a:hover {
 .main {
     clear: left;
     background:#F5F5F5;
-    padding: 1em 0;
-    padding-bottom: 20em;
+    padding: 1em 0 20em;
     margin: 0 auto;
     width: 100%;
 }
 
 .bookEntry {
-    margin: 3em auto;
-    margin-bottom: 15em;
+    margin: 3em auto 15em;
     width: 75em;
     height: 30em;
     background: #fff;
@@ -325,7 +319,7 @@ footer {
 }
 
 .logoName {
-   font-family: "Roboto Slab";
+   font-family: "Roboto Slab", serif;
     color: #A9A9A9;
    font-size: 1.2em;
     font-weight: 500;
