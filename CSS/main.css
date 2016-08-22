@@ -197,7 +197,7 @@ nav a:hover {
 
 .bookEntry {
     margin: 3em auto;
-    width: 70em;
+    width: 75em;
     height: 30em;
     background: #fff;
 
@@ -216,6 +216,7 @@ nav a:hover {
 
 .bookSummary {
     float: left;
+    clear: left;
     margin-top: 4em;
     width: 25em;
     border-right: 1px #EDEDED solid ;
@@ -230,6 +231,18 @@ nav a:hover {
     padding: 1em;
     text-decoration: none;
     color:#5497D3;
+}
+
+                            /* Book entry nav styling below main titles */
+
+.bookOl {
+    text-decoration: none;
+    width: 35em;
+}
+
+.bookLi {
+    float: left;
+    padding-left: 1em;
 }
 
 
