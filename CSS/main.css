@@ -58,10 +58,9 @@ table {
 
 body {
     position: relative;
-    background-image: url("../images/books_header_bg.jpg");
-    background-repeat: repeat-x;
+    background: url("../images/books_header_bg.jpg") repeat-x;
     font-family: Roboto;
-    padding-bottom: 30em;
+    padding-bottom: 12em;
 }
 
 
@@ -191,12 +190,14 @@ nav a:hover {
     clear: left;
     background:#F5F5F5;
     padding: 1em 0;
+    padding-bottom: 20em;
     margin: 0 auto;
     width: 100%;
 }
 
 .bookEntry {
     margin: 3em auto;
+    margin-bottom: 15em;
     width: 75em;
     height: 30em;
     background: #fff;
@@ -210,25 +211,32 @@ nav a:hover {
 }
 
 .bookTitle {
-    padding: 1em;
+    padding: 1em 0 .8em 1em;
     font-size: 1.8em;
 }
 
 .bookSummary {
     float: left;
     clear: left;
-    margin-top: 4em;
-    width: 25em;
+    margin-top: 1.5em;
+    width: 26em;
     border-right: 1px #EDEDED solid ;
+    padding: 0 2.5em 1em 1em ;
 }
 
 .summaryP {
+    color: #565656;
     line-height: 1.4em;
     padding: 1em;
+    text-align: justify;
+}
+
+.lastP {
+    padding-bottom: 2em;
 }
 
 .summaryLink {
-    padding: 1em;
+    padding-left: 1em;
     text-decoration: none;
     color:#5497D3;
 }
@@ -238,13 +246,50 @@ nav a:hover {
 .bookOl {
     text-decoration: none;
     width: 35em;
+    padding-left: 1em;
 }
 
 .bookLi {
     float: left;
     padding-left: 1em;
+    font-size: .8em;
 }
 
+.textLi {
+    color: #C4C4C4;
+    font-size: .9em;
+}
+
+.authorLink {
+    text-decoration: none;
+    color:#5497D3;
+}
+
+
+                        /* Stat Section for book entries with percents and list */
+
+.statSection {
+    float: left;
+    width: 21em;
+}
+
+
+.percentSection {
+    margin-top: 3em;
+    padding: 0 0 0 3em;
+}
+
+.percentBars {
+    padding: 1em 0 0 0;
+}
+
+.linkSection {
+    margin-top: 5em;
+}
+
+.options {
+    padding: 0 1em 1em 4em;
+}
 
 /* Footer */
 
