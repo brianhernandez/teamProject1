@@ -217,6 +217,7 @@ nav a:hover {
 .bookTitle {
     padding: 1em 0 .8em 1em;
     font-size: 1.8em;
+    line-height:1.1em;
 }
 
 .bookSummary {
