@@ -204,6 +204,10 @@ nav a:hover {
 
 }
 
+.lastBook {
+  margin-bottom: 8em;
+}
+
 .bookImg {
     float: right;
     height: 30em;
@@ -289,6 +293,16 @@ nav a:hover {
 
 .options {
     padding: 0 1em 1em 4em;
+}
+
+   /* Load text at bottom section*/
+
+.loadText {
+    text-transform: uppercase;
+    color: #CACACA;
+    text-align: center;
+    font-size: 1.1em;
+
 }
 
 /* Footer */
