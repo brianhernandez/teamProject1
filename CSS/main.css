@@ -31,7 +31,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    font-size: 100%;
 }
 ol, ul {
     list-style: none;
@@ -58,23 +57,21 @@ table {
 
 body {
     position: relative;
-    background-image: url("../images/books_header_bg.jpg");
-    background-repeat: repeat-x;
-    font-family: Roboto;
-    padding-bottom: 30em;
+    background: url("../images/books_header_bg.jpg") repeat-x;
+    font-family: Roboto, serif;
+    padding-bottom: 12em;
 }
 
 
 /* Header */
 
 .bannerContainer {
-    margin: 0 auto;
     width: 50em;
-    margin-top: 3em;
+    margin: 3em auto 0;
 }
 
 .mainHeader {
-    font-family: "Roboto Slab";
+    font-family: "Roboto Slab", serif;
     font-size: 1.9em;
     color: #fff;
     font-weight: 300;
@@ -103,8 +100,7 @@ body {
 
 .search {
     width:41em;
-    margin: 0 auto;
-    margin-top: 1em;
+    margin: 1em auto 0;
 
 }
 
@@ -159,12 +155,11 @@ input[type="text"] {
 
 .navOl {
     list-style-type: none;
-    margin: 0 auto;
-    margin-top:3em;
+    margin: 3em auto 0;
     width: 65em;
     padding: 0;
     font-weight:400;
-    font-family:"Roboto Slab";
+    font-family: "Roboto Slab", serif;
 }
 
 .navList {
@@ -183,6 +178,127 @@ nav a:hover {
     color:#A2C331;
 }
 
+
+/* Main Section */
+
+
+.main {
+    clear: left;
+    background:#F5F5F5;
+    padding: 1em 0 20em;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.bookEntry {
+    margin: 3em auto 15em;
+    width: 75em;
+    height: 30em;
+    background: #fff;
+
+}
+
+.lastBook {
+  margin-bottom: 8em;
+}
+
+.bookImg {
+    float: right;
+    height: 30em;
+
+}
+
+.bookTitle {
+    padding: 1em 0 .8em 1em;
+    font-size: 1.8em;
+    line-height:1.1em;
+}
+
+.bookSummary {
+    float: left;
+    clear: left;
+    margin-top: 1.5em;
+    width: 26em;
+    border-right: 1px #EDEDED solid ;
+    padding: 0 2.5em 1em 1em ;
+}
+
+.summaryP {
+    color: #565656;
+    line-height: 1.4em;
+    padding: 1em;
+    text-align: justify;
+}
+
+.lastP {
+    padding-bottom: 2em;
+}
+
+.summaryLink {
+    padding-left: 1em;
+    text-decoration: none;
+    color:#5497D3;
+}
+
+                            /* Book entry nav styling below main titles */
+
+.bookOl {
+    text-decoration: none;
+    width: 35em;
+    padding-left: 1em;
+}
+
+.bookLi {
+    float: left;
+    padding-left: 1em;
+    font-size: .8em;
+}
+
+.textLi {
+    color: #C4C4C4;
+    font-size: .9em;
+}
+
+.authorLink {
+    text-decoration: none;
+    color:#5497D3;
+}
+
+
+                        /* Stat Section for book entries with percents and list */
+
+.statSection {
+    float: left;
+    width: 21em;
+}
+
+
+.percentSection {
+    margin-top: 3em;
+    padding: 0 0 0 3em;
+}
+
+.percentBars {
+    padding: 1em 0 0 0;
+}
+
+.linkSection {
+    margin-top: 5em;
+}
+
+.options {
+    padding: 0 1em 1em 4em;
+}
+
+   /* Load text at bottom section*/
+
+.loadText {
+    text-transform: uppercase;
+    color: #CACACA;
+    text-align: center;
+    font-size: 1.1em;
+
+}
 
 /* Footer */
 
@@ -203,7 +319,7 @@ footer {
 }
 
 .logoName {
-   font-family: "Roboto Slab";
+   font-family: "Roboto Slab", serif;
     color: #A9A9A9;
    font-size: 1.2em;
     font-weight: 500;
