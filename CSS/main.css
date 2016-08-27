@@ -264,6 +264,29 @@ nav a:hover {
     color:#5497D3;
 }
 
+/* Follow Button */
+
+.followButton {
+    /*-webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;*/
+    border-radius: 3px;
+    border: 1px solid #A3C84E;
+    background-color: transparent;
+    color: #A3C84E;
+    font-size: 13px;
+    padding: .3125em .625em;
+    vertical-align: top;
+    display: inline;
+}
+
+.followButton:hover,
+.followButton:focus {
+    color: #fff;
+    background-color:#A3C84E;
+    cursor: pointer;
+}
+
 
                         /* Stat Section for book entries with percents and list */
 
@@ -288,6 +311,94 @@ nav a:hover {
 
 .options {
     padding: 0 1em 1em 4em;
+}
+
+                        /* Purchase book links section after book entry */
+
+.purchaseLinks {
+    clear: both;
+    /* This margin could be removed or kept,
+    the mockup is inconsistent, the 
+    first two book entries have purchase links
+    that are about 3px indented from the 
+    book entry div edge while the last two don't */
+    /*margin-left: 3px;*/
+}
+
+.purchaseLinks a {
+    text-decoration: none;
+}
+.purchaseLinks a:visited {
+    color: inherit;
+}
+
+.purchaseLinks li {
+    display: inline-block;
+    margin-top: 1.8125em;
+    margin-right: 1.9375em;
+    max-height: 2.625em;
+    background-color: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #A3C84E;
+}
+
+.purchaseLinks li:hover,
+.purchaseLinks li:focus {
+    color: #ACE249;
+}
+
+.purchaseLinks li span {
+    vertical-align: top;
+    line-height: 2.8125em;
+    padding-left: .875em;
+    padding-right: .875em;
+    
+    font-weight: 300;
+}
+
+.purchaseLinks li:last-of-type {
+    float:right;
+    background-color: transparent;
+    text-align: center;
+    margin-right: 0;
+    color: #858683;
+    font-size: .875em;
+}
+
+.purchaseLinks li:last-of-type:hover,
+.purchaseLinks li:last-of-type:focus {
+    color: #9FA09E;
+}
+
+.bookmarkIcon {
+    font-size: 2.5rem;
+}
+    /* Download Button */
+
+.digitalDownload {
+    /*position: absolute;*/
+    border: none;
+    clear: both;
+    display: block;
+    background-color: #93C33C;
+    border-radius: 3px;
+    color: white;
+    font-weight: 300;
+    font-size: 1.125em;
+    font-family: Roboto, sans-serif;
+    /* This is weird that I have to add 
+    so much margin just to nudge this
+    button down a bit */
+    margin-top: 22em;
+    margin-left: 3px;
+    padding: .625em 3.125em;
+    cursor: pointer;
+}
+
+.digitalDownload:hover,
+.digitalDownload:focus {
+    background-color: #9DD041;
 }
 
    /* Load text at bottom section*/
