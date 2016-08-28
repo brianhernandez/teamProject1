@@ -112,10 +112,12 @@ input[type="text"] {
     background-color:#CEDD9A;
     color: #90A647;
     border: none;
-    padding-left: 1em;
-    font-size: 1.2em;
+    padding: .3em 1em;
+    font-size: 1.125em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     outline: none;
-    border-radius:5px;
+    border-radius: 3px;
 }
 
 /* use another class on magnify image in search bar to add javascript click functionality later */
@@ -123,12 +125,18 @@ input[type="text"] {
 .dem {
     position: relative;
     left: 37.4em;
-    top: 2.95em;
-    height: 2.8em;
-    width: 3.5em;
+    top: 3.14em;
+    height: 3.125em;
+    width: 3.875em;
     background-color: #fff;
-    border-radius: 5px;
-
+    border-radius: 3px;
+    cursor: pointer;
+}
+.dem img {
+    position: relative;
+    top: -.02em;
+    left: .3em;
+    max-width: 82%;
 }
 
 /* Placeholder text color */
@@ -155,16 +163,19 @@ input[type="text"] {
 
 .navOl {
     list-style-type: none;
-    margin: 3em auto 0;
-    width: 65em;
+    margin: 2.1em auto 0;
+    /*width: 65em;*/
     padding: 0;
-    font-weight:400;
-    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    font-size: 1.125em;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
 }
 
 .navList {
-    float: left;
+    /*float: left;*/
     padding: 1em;
+    display: inline-block;
 }
 
 .navLinks {
@@ -195,6 +206,7 @@ nav a:hover {
     width: 75em;
     height: 30em;
     background: #fff;
+    border-radius: 3px;
 
 }
 
@@ -205,6 +217,7 @@ nav a:hover {
 .bookImg {
     float: right;
     height: 30em;
+    border-radius: 3px;
 
 }
 
@@ -251,7 +264,11 @@ nav a:hover {
 .bookLi {
     float: left;
     padding-left: 1em;
-    font-size: .8em;
+    font-size: .875em;
+    min-height: 27px;
+    vertical-align: top;
+    line-height: 29px;
+    font-weight: 300;
 }
 
 .textLi {
@@ -275,6 +292,7 @@ nav a:hover {
     background-color: transparent;
     color: #A3C84E;
     font-size: 13px;
+    font-weight: 300;
     padding: .3125em .625em;
     vertical-align: top;
     display: inline;
@@ -425,7 +443,7 @@ footer {
 .logoContainer {
     float: left;
     width:25em;
-    margin-left: 13em;
+    margin-left: 3em;
     margin-top: 4em;
 }
 
@@ -454,7 +472,7 @@ footer {
 .incContainer {
     float: right;
     margin-top:5em;
-    margin-right: 15em;
+    margin-right: 3em;
     font-size: .9em;
 }
 
