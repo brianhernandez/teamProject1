@@ -315,20 +315,94 @@ nav a:hover {
 
 
 .percentSection {
-    margin-top: 3em;
-    padding: 0 0 0 3em;
+    margin-top: 2.5em;
+    padding: 0;
+    clear: both;
 }
 
 .percentBars {
-    padding: 1em 0 0 0;
+    padding: 0em 0 0 0;
+    margin: 1.5em 1.75em;
+}
+
+.percentBars span:first-of-type {
+    padding-left: .4375em;
+}
+
+.percentBars span:last-of-type {
+    float: right;
+    padding-right: .4375em;
+}
+.percentBarWrapper {
+    width: 100%;
+    clear: both;
+    background: #F3F3F3;
+    padding: 0px;
+    border-radius: 10px;
+    position: relative;
+    position: relative;
+    top: .3125em;
+}
+
+.percentBarWrapper .progress {
+    height: 4px;
+    border-radius: 5px 0 0 5px;
+    position: relative;
+}
+
+.easyToFollow {
+    color: #F9BD48;
+}
+.easyToFollow .progress {
+    width: 80%;
+    background-color: #F9BD48;
+}
+.comprehensive {
+    color: #6DC374;
+}
+.comprehensive .progress {
+    width: 75%;
+    background-color: #6DC374;
+}
+.enoughExamples {
+    color: #4EC9E0;
+}
+.enoughExamples .progress {
+    width: 95%;
+    background-color: #4EC9E0;
 }
 
 .linkSection {
-    margin-top: 5em;
+    margin-top: 4em;
 }
 
 .options {
-    padding: 0 1em 1em 4em;
+    padding: 0 .4375em .75em .4375em;
+    max-width: 281px;
+    margin: .875em 1.75em;
+    text-align: left;
+    font-weight: 300;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.options a {
+    color: #2B84C4;
+    text-decoration: none;
+}
+
+.options a:hover,
+.options a:focus {
+    color: #45AEF4;
+}
+
+.options a:after {
+    content:'>';
+    position: relative;
+    float: right;
+}
+
+.options:last-of-type {
+    border-bottom: none;
 }
 
                         /* Purchase book links section after book entry */
@@ -395,7 +469,6 @@ nav a:hover {
     /* Download Button */
 
 .digitalDownload {
-    /*position: absolute;*/
     border: none;
     clear: both;
     display: block;
