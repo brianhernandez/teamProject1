@@ -67,7 +67,7 @@ body {
 
 .bannerContainer {
     width: 50em;
-    margin: 3em auto 0;
+    margin: 2em auto 0;
 }
 
 .mainHeader {
@@ -100,14 +100,15 @@ body {
 
 .search {
     width:44em;
-    margin: 1em auto 0;
+    margin: .5em auto 0;
+    padding-bottom: 1.4em;
 
 }
 
 
 
 input[type="text"] {
-    height: 2.2em;
+    height: 2.3em;
     width: 36em;
     background-color:#CEDD9A;
     color: #90A647;
@@ -125,8 +126,8 @@ input[type="text"] {
 .dem {
     position: relative;
     left: 38.9em;
-    top: 3.14em;
-    height: 3.125em;
+    top: 3.25em;
+    height: 3.25em;
     width: 3.875em;
     background-color: #fff;
     border-radius: 3px;
@@ -134,7 +135,7 @@ input[type="text"] {
 }
 .dem img {
     position: relative;
-    top: -.02em;
+    top: -.5em;
     left: .3em;
     max-width: 82%;
 }
