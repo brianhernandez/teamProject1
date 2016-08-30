@@ -203,7 +203,7 @@ nav a:hover {
 
 .bookEntry {
     margin: 3em auto 15em;
-    width: 75em;
+    width: 74em;
     height: 30em;
     background: #fff;
     border-radius: 3px;
@@ -284,14 +284,11 @@ nav a:hover {
 /* Follow Button */
 
 .followButton {
-    /*-webkit-appearance: none;
-    -moz-appearance:    none;
-    appearance:         none;*/
     border-radius: 3px;
     border: 1px solid #A3C84E;
     background-color: transparent;
     color: #A3C84E;
-    font-size: 13px;
+    font-size: .8125rem;
     font-weight: 300;
     padding: .3125em .625em;
     vertical-align: top;
@@ -313,7 +310,6 @@ nav a:hover {
     width: 21em;
 }
 
-
 .percentSection {
     margin-top: 2.5em;
     padding: 0;
@@ -333,11 +329,12 @@ nav a:hover {
     float: right;
     padding-right: .4375em;
 }
+
 .percentBarWrapper {
     width: 100%;
     clear: both;
     background: #F3F3F3;
-    padding: 0px;
+    padding: 0;
     border-radius: 10px;
     position: relative;
     position: relative;
@@ -345,7 +342,7 @@ nav a:hover {
 }
 
 .percentBarWrapper .progress {
-    height: 4px;
+    height: .25em;
     border-radius: 5px 0 0 5px;
     position: relative;
 }
@@ -353,20 +350,25 @@ nav a:hover {
 .easyToFollow {
     color: #F9BD48;
 }
+
 .easyToFollow .progress {
     width: 80%;
     background-color: #F9BD48;
 }
+
 .comprehensive {
     color: #6DC374;
 }
+
 .comprehensive .progress {
     width: 75%;
     background-color: #6DC374;
 }
+
 .enoughExamples {
     color: #4EC9E0;
 }
+
 .enoughExamples .progress {
     width: 95%;
     background-color: #4EC9E0;
@@ -377,8 +379,8 @@ nav a:hover {
 }
 
 .options {
-    padding: 0 .4375em .75em .4375em;
-    max-width: 281px;
+    padding: 0 0 .6em .4375em;
+    max-width: 17.5625em;
     margin: .875em 1.75em;
     text-align: left;
     font-weight: 300;
@@ -395,8 +397,7 @@ nav a:hover {
     color: #45AEF4;
 }
 
-.options a:after {
-    content:'>';
+.options span {
     position: relative;
     float: right;
 }
@@ -492,7 +493,100 @@ nav a:hover {
     background-color: #9DD041;
 }
 
-   /* Load text at bottom section*/
+    /* Contents Overlay */
+
+.bookEntryWithOverlay {
+    position: relative;
+}
+
+.overlayWrapper {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(208,208,208,.7);
+}
+
+.contentsOverlay {
+    float: right;
+    background-color: #fff;
+    border: 4px solid #C9E9E7;
+    padding: 2.4375em 2.25em;
+    height: 24.6em;
+}
+
+#overlaySearchBox {
+    border: 1px solid #D9D9D9;
+    background-color: #fff;
+    color: #000;
+    font-weight: 300;
+    margin-bottom: 2.8125em;
+}
+
+ol.resultsList {
+    overflow: scroll;
+    height: 20em;
+}
+
+.resultsList li {
+    margin-bottom: 1.125em;
+    overflow: scroll;
+}
+
+.resultsList li span {
+    background-color: #D3EDD4;
+}
+
+.resultsList li span:last-of-type {
+    background-color: initial;
+    padding-right: 2em;
+    float: right;
+}
+.tabsList {
+    position: absolute;
+    top: 230px;
+    right: -269px;
+    transform: rotate(90deg);
+    max-height: .625em;
+}
+
+.tab {
+    display: inline-block;
+    /*margin-right: 2em;*/
+    padding: .8125rem;
+    margin-right: .625em;
+    font-size: .875em;
+    font-weight: 300;
+    color: #229BA7;
+}
+
+.tab:focus,
+.tab:hover {
+    color: #28C0CF;
+    cursor: pointer;
+}
+
+.tab:first-of-type {
+    color: #3F3F3F;
+    position: relative;
+    top: .4375em;
+}
+
+.tab:first-of-type:focus,
+.tab:first-of-type:hover {
+    color: #6F6F6F;
+    cursor: pointer;
+}
+.active {
+    background-color: #C9E9E7;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    color: #00A6C7;
+}
+
+    /* Load text at bottom section*/
 
 .loadText {
     text-transform: uppercase;
