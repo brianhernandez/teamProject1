@@ -99,7 +99,7 @@ body {
 /* Search Box */
 
 .search {
-    width:41em;
+    width:44em;
     margin: 1em auto 0;
 
 }
@@ -108,7 +108,7 @@ body {
 
 input[type="text"] {
     height: 2.2em;
-    width: 33em;
+    width: 36em;
     background-color:#CEDD9A;
     color: #90A647;
     border: none;
@@ -124,7 +124,7 @@ input[type="text"] {
 
 .dem {
     position: relative;
-    left: 37.4em;
+    left: 38.9em;
     top: 3.14em;
     height: 3.125em;
     width: 3.875em;
