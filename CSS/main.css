@@ -50,8 +50,6 @@ table {
 
 
 
-
-
 /*End Reset*/
 
 
@@ -67,7 +65,7 @@ body {
 
 .bannerContainer {
     width: 50em;
-    margin: 3em auto 0;
+    margin: 2em auto 0;
 }
 
 .mainHeader {
@@ -84,6 +82,7 @@ body {
     color:#EAF3CC;
     font-weight:100;
 }
+
 .tagLine{
     margin-top: .5em;
     color:#769210;
@@ -99,36 +98,45 @@ body {
 /* Search Box */
 
 .search {
-    width:41em;
-    margin: 1em auto 0;
-
+    width:44em;
+    margin: .5em auto 0;
+    padding-bottom: 1.4em;
 }
 
 
 
 input[type="text"] {
-    height: 2.2em;
-    width: 33em;
+    height: 2.3em;
+    width: 36em;
     background-color:#CEDD9A;
     color: #90A647;
     border: none;
-    padding-left: 1em;
-    font-size: 1.2em;
+    padding: .3em 1em;
+    font-size: 1.125em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     outline: none;
-    border-radius:5px;
+    border-radius: 3px;
 }
 
 /* use another class on magnify image in search bar to add javascript click functionality later */
 
 .dem {
     position: relative;
-    left: 37.4em;
-    top: 2.95em;
-    height: 2.8em;
-    width: 3.5em;
+    left: 38.9em;
+    top: 3.25em;
+    height: 3.25em;
+    width: 3.875em;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
 
+.dem img {
+    position: relative;
+    top: -.4em;
+    left: .3em;
+    max-width: 82%;
 }
 
 /* Placeholder text color */
@@ -155,23 +163,23 @@ input[type="text"] {
 
 .navOl {
     list-style-type: none;
-    margin: 3em auto 0;
-    width: 65em;
+    margin: 2.1em auto 0;
     padding: 0;
-    font-weight:400;
-    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    font-size: 1.125em;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
 }
 
 .navList {
-    float: left;
     padding: 1em;
+    display: inline-block;
 }
 
 .navLinks {
     display: block;
     text-decoration: none;
     color:#929292;
-
 }
 
 nav a:hover {
@@ -192,10 +200,10 @@ nav a:hover {
 
 .bookEntry {
     margin: 3em auto 15em;
-    width: 75em;
+    width: 74em;
     height: 30em;
     background: #fff;
-
+    border-radius: 3px;
 }
 
 .lastBook {
@@ -205,7 +213,7 @@ nav a:hover {
 .bookImg {
     float: right;
     height: 30em;
-
+    border-radius: 3px;
 }
 
 .bookTitle {
@@ -251,7 +259,11 @@ nav a:hover {
 .bookLi {
     float: left;
     padding-left: 1em;
-    font-size: .8em;
+    font-size: .875em;
+    min-height: 27px;
+    vertical-align: top;
+    line-height: 29px;
+    font-weight: 300;
 }
 
 .textLi {
@@ -264,6 +276,27 @@ nav a:hover {
     color:#5497D3;
 }
 
+/* Follow Button */
+
+.followButton {
+    border-radius: 3px;
+    border: 1px solid #A3C84E;
+    background-color: transparent;
+    color: #A3C84E;
+    font-size: .8125rem;
+    font-weight: 300;
+    padding: .3125em .625em;
+    vertical-align: top;
+    display: inline;
+}
+
+.followButton:hover,
+.followButton:focus {
+    color: #fff;
+    background-color:#A3C84E;
+    cursor: pointer;
+}
+
 
                         /* Stat Section for book entries with percents and list */
 
@@ -272,25 +305,319 @@ nav a:hover {
     width: 21em;
 }
 
-
 .percentSection {
-    margin-top: 3em;
-    padding: 0 0 0 3em;
+    margin-top: 2.5em;
+    padding: 0;
+    clear: both;
 }
 
 .percentBars {
-    padding: 1em 0 0 0;
+    padding: 0em 0 0 0;
+    margin: 1.5em 1.75em;
+}
+
+.percentBars span:first-of-type {
+    padding-left: .4375em;
+}
+
+.percentBars span:last-of-type {
+    float: right;
+    padding-right: .4375em;
+}
+
+.percentBarWrapper {
+    width: 100%;
+    clear: both;
+    background: #F3F3F3;
+    padding: 0;
+    border-radius: 10px;
+    position: relative;
+    position: relative;
+    top: .3125em;
+}
+
+.percentBarWrapper .progress {
+    height: .25em;
+    border-radius: 5px 0 0 5px;
+    position: relative;
+}
+
+.easyToFollow {
+    color: #F9BD48;
+}
+
+.easyToFollow .progress {
+    width: 80%;
+    background-color: #F9BD48;
+}
+
+.comprehensive {
+    color: #6DC374;
+}
+
+.comprehensive .progress {
+    width: 75%;
+    background-color: #6DC374;
+}
+
+.enoughExamples {
+    color: #4EC9E0;
+}
+
+.enoughExamples .progress {
+    width: 95%;
+    background-color: #4EC9E0;
 }
 
 .linkSection {
-    margin-top: 5em;
+    margin-top: 4em;
 }
 
 .options {
-    padding: 0 1em 1em 4em;
+    padding: 0 0 .6em .4375em;
+    max-width: 17.5625em;
+    margin: .875em 1.75em;
+    text-align: left;
+    font-weight: 300;
+    border-bottom: 1px solid #E5E5E5;
 }
 
-   /* Load text at bottom section*/
+.options a {
+    color: #2B84C4;
+    text-decoration: none;
+}
+
+.options a:hover,
+.options a:focus {
+    color: #45AEF4;
+}
+
+.options span {
+    position: relative;
+    float: right;
+}
+
+.options:last-of-type {
+    border-bottom: none;
+}
+
+                        /* Purchase book links section after book entry */
+
+.purchaseLinks {
+    clear: both;
+}
+
+.purchaseLinks a {
+    text-decoration: none;
+}
+
+.purchaseLinks a:visited {
+    color: inherit;
+}
+
+.purchaseLinks li {
+    display: inline-block;
+    margin-top: 1.8125em;
+    margin-right: 1.9375em;
+    max-height: 2.625em;
+    background-color: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.purchaseLinks li span {
+    color: #A3C84E;
+}
+
+.purchaseLinks li span:hover,
+.purchaseLinks li span:focus {
+    color: #ACE249;
+}
+
+.purchaseLinks li span {
+    vertical-align: top;
+    line-height: 2.8125em;
+    padding-left: .875em;
+    padding-right: .875em;
+    font-weight: 300;
+}
+
+.purchaseLinks li:last-of-type {
+    float:right;
+    background-color: transparent;
+    text-align: center;
+    margin-right: 0;
+    font-size: .875em;
+}
+
+.purchaseLinks li:last-of-type a {
+    color: #858683;
+}
+
+.purchaseLinks li:last-of-type a:hover,
+.purchaseLinks li:last-of-type a:focus {
+    color: #9FA09E;
+}
+
+.bookmarkIcon {
+    font-size: 2.5rem;
+    color: #858683;
+}
+
+.bookmarkIcon:hover,
+.bookmarkIcon:focus {
+    color: #9FA09E;    
+}
+
+    /* Download Button */
+
+.digitalDownload {
+    border: none;
+    clear: both;
+    display: block;
+    background-color: #93C33C;
+    border-radius: 3px;
+    color: white;
+    font-weight: 300;
+    font-size: 1.125em;
+    font-family: Roboto, sans-serif;
+    /* This is weird that I have to add 
+    so much margin just to nudge this
+    button down a bit */
+    margin-top: 22em;
+    margin-left: 3px;
+    padding: .625em 3.125em;
+    cursor: pointer;
+}
+
+.digitalDownload:hover,
+.digitalDownload:focus {
+    background-color: #9DD041;
+}
+
+    /* Contents Overlay */
+
+.bookEntryWithOverlay {
+    position: relative;
+}
+
+.overlayWrapper {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(208,208,208,.7);
+}
+
+.contentsOverlay {
+    float: right;
+    background-color: #fff;
+    border: 4px solid #C9E9E7;
+    padding: 2.4375em 2.25em;
+    height: 24.6em;
+    width: 39em;
+}
+
+
+/* Placeholder text color for search bar in third book entry */
+
+.searchPlace::-webkit-input-placeholder {
+    color:#000;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.searchPlace:-moz-placeholder { /* Firefox 18- */
+    color:#000;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.searchPlace::-moz-placeholder {  /* Firefox 19+ */
+    color:#000;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.searchPlace:-ms-input-placeholder {
+    color:#000;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+#overlaySearchBox {
+    border: 1px solid #D9D9D9;
+    background-color: #fff;
+    color: #000;
+    font-weight: 300;
+    margin-bottom: 2.8125em;
+    width: 95%;
+}
+
+ol.resultsList {
+    overflow: scroll;
+    height: 19em;
+}
+
+.resultsList li {
+    margin-bottom: 1.125em;
+    overflow: scroll;
+}
+
+.resultsList li span {
+    background-color: #D3EDD4;
+}
+
+.resultsList li span:last-of-type {
+    background-color: initial;
+    padding-right: 2em;
+    float: right;
+}
+
+.tabsList {
+    position: absolute;
+    top: 230px;
+    right: -269px;
+    transform: rotate(90deg);
+    max-height: .625em;
+}
+
+.tab {
+    display: inline-block;
+    padding: .8125rem;
+    margin-right: .625em;
+    font-size: .875em;
+    font-weight: 300;
+    color: #229BA7;
+}
+
+.tab:focus,
+.tab:hover {
+    color: #28C0CF;
+    cursor: pointer;
+}
+
+.tab:first-of-type {
+    color: #3F3F3F;
+    position: relative;
+    top: .4375em;
+}
+
+.tab:first-of-type:focus,
+.tab:first-of-type:hover {
+    color: #6F6F6F;
+    cursor: pointer;
+}
+.active {
+    background-color: #C9E9E7;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    color: #00A6C7;
+}
+
+    /* Load text at bottom section*/
 
 .loadText {
     text-transform: uppercase;
@@ -308,13 +635,16 @@ footer {
     width: 100%;
     background:#3A3A3A;
     height: 12em;
+}
 
+.footWrapper {
+    width: 74em;
+    margin: 0 auto;
 }
 
 .logoContainer {
     float: left;
     width:25em;
-    margin-left: 13em;
     margin-top: 4em;
 }
 
@@ -343,7 +673,6 @@ footer {
 .incContainer {
     float: right;
     margin-top:5em;
-    margin-right: 15em;
     font-size: .9em;
 }
 
