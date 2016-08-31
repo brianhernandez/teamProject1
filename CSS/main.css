@@ -447,7 +447,6 @@ nav a:hover {
     line-height: 2.8125em;
     padding-left: .875em;
     padding-right: .875em;
-    
     font-weight: 300;
 }
 
@@ -517,6 +516,35 @@ nav a:hover {
     padding: 2.4375em 2.25em;
     height: 24.6em;
 }
+
+
+/* Placeholder text color for search bar in third book entry */
+
+.searchPlace::-webkit-input-placeholder {
+    color:#000;
+    font-weight: 300;
+    font-size: 1.2em;
+
+}
+
+.searchPlace:-moz-placeholder { /* Firefox 18- */
+    color:#000;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.searchPlace::-moz-placeholder {  /* Firefox 19+ */
+    color:#000;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.searchPlace:-ms-input-placeholder {
+    color:#000;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
 
 #overlaySearchBox {
     border: 1px solid #D9D9D9;
