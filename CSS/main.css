@@ -50,8 +50,6 @@ table {
 
 
 
-
-
 /*End Reset*/
 
 
@@ -84,6 +82,7 @@ body {
     color:#EAF3CC;
     font-weight:100;
 }
+
 .tagLine{
     margin-top: .5em;
     color:#769210;
@@ -102,7 +101,6 @@ body {
     width:44em;
     margin: .5em auto 0;
     padding-bottom: 1.4em;
-
 }
 
 
@@ -133,9 +131,10 @@ input[type="text"] {
     border-radius: 3px;
     cursor: pointer;
 }
+
 .dem img {
     position: relative;
-    top: -.5em;
+    top: -.4em;
     left: .3em;
     max-width: 82%;
 }
@@ -165,7 +164,6 @@ input[type="text"] {
 .navOl {
     list-style-type: none;
     margin: 2.1em auto 0;
-    /*width: 65em;*/
     padding: 0;
     font-weight: 400;
     font-size: 1.125em;
@@ -174,7 +172,6 @@ input[type="text"] {
 }
 
 .navList {
-    /*float: left;*/
     padding: 1em;
     display: inline-block;
 }
@@ -183,7 +180,6 @@ input[type="text"] {
     display: block;
     text-decoration: none;
     color:#929292;
-
 }
 
 nav a:hover {
@@ -208,7 +204,6 @@ nav a:hover {
     height: 30em;
     background: #fff;
     border-radius: 3px;
-
 }
 
 .lastBook {
@@ -219,7 +214,6 @@ nav a:hover {
     float: right;
     height: 30em;
     border-radius: 3px;
-
 }
 
 .bookTitle {
@@ -411,17 +405,12 @@ nav a:hover {
 
 .purchaseLinks {
     clear: both;
-    /* This margin could be removed or kept,
-    the mockup is inconsistent, the 
-    first two book entries have purchase links
-    that are about 3px indented from the 
-    book entry div edge while the last two don't */
-    /*margin-left: 3px;*/
 }
 
 .purchaseLinks a {
     text-decoration: none;
 }
+
 .purchaseLinks a:visited {
     color: inherit;
 }
@@ -528,6 +517,7 @@ nav a:hover {
     border: 4px solid #C9E9E7;
     padding: 2.4375em 2.25em;
     height: 24.6em;
+    width: 39em;
 }
 
 
@@ -537,7 +527,6 @@ nav a:hover {
     color:#000;
     font-weight: 300;
     font-size: 1.2em;
-
 }
 
 .searchPlace:-moz-placeholder { /* Firefox 18- */
@@ -558,18 +547,18 @@ nav a:hover {
     font-size: 1.2em;
 }
 
-
 #overlaySearchBox {
     border: 1px solid #D9D9D9;
     background-color: #fff;
     color: #000;
     font-weight: 300;
     margin-bottom: 2.8125em;
+    width: 95%;
 }
 
 ol.resultsList {
     overflow: scroll;
-    height: 20em;
+    height: 19em;
 }
 
 .resultsList li {
@@ -586,6 +575,7 @@ ol.resultsList {
     padding-right: 2em;
     float: right;
 }
+
 .tabsList {
     position: absolute;
     top: 230px;
@@ -596,7 +586,6 @@ ol.resultsList {
 
 .tab {
     display: inline-block;
-    /*margin-right: 2em;*/
     padding: .8125rem;
     margin-right: .625em;
     font-size: .875em;
@@ -646,7 +635,6 @@ footer {
     width: 100%;
     background:#3A3A3A;
     height: 12em;
-
 }
 
 .footWrapper {
