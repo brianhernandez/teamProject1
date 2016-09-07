@@ -342,6 +342,43 @@ nav a:hover {
     position: relative;
 }
 
+/* Value Bubbles for Percentage Bars */ 
+
+.bubble {
+    margin-left: .5em;
+    display: inline-block;
+    position: relative;
+    top: -.25em;
+    width: 1.375em;
+    height: 1.125em;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+
+.bubble:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    right: auto;
+    top: auto;
+    bottom: -.3125em;
+    border: 6px solid;
+}
+
+.bubbleContent{
+    text-align: center;
+    line-height: 1.3em;
+}
+
+.bubbleContent p{
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    font-size: .65em;
+}
+
 .easyToFollow {
     color: #F9BD48;
 }
@@ -350,6 +387,19 @@ nav a:hover {
     width: 80%;
     background-color: #F9BD48;
 }
+
+.easyToFollow .bubble {
+    background-color: #F9BD48;
+}
+
+.easyToFollow .bubble:after {
+    border-color: transparent transparent transparent #F9BD48;
+}
+
+.easyToFollow .bubbleContent p {
+    color: #C18B2C;
+}
+
 
 .comprehensive {
     color: #6DC374;
@@ -360,6 +410,18 @@ nav a:hover {
     background-color: #6DC374;
 }
 
+.comprehensive .bubble {
+    background-color: #A7D8AA;
+}
+
+.comprehensive .bubble:after {
+    border-color: transparent transparent transparent #A7D8AA;
+}
+
+.comprehensive .bubbleContent p {
+    color: #479550;
+}
+
 .enoughExamples {
     color: #4EC9E0;
 }
@@ -367,6 +429,18 @@ nav a:hover {
 .enoughExamples .progress {
     width: 95%;
     background-color: #4EC9E0;
+}
+
+.enoughExamples .bubble {
+    background-color: #96D6E6;
+}
+
+.enoughExamples .bubble:after {
+    border-color: transparent transparent transparent #96D6E6;
+}
+
+.enoughExamples .bubbleContent p {
+    color: #008AA1;
 }
 
 .linkSection {
