@@ -2,6 +2,9 @@
 First team project for modern developer
 
 
+[Live Link](https://oscarrobertrodriguez.github.io/teamProject1/)
+
+
 Group Work Flow :
 
 Brian : Do buttons, percentage bars and list. Also do third book entry with tabs. Also do the follow button below the titles in book entries.
