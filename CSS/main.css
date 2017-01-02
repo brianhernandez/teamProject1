@@ -342,7 +342,7 @@ nav a:hover {
     position: relative;
 }
 
-/* Value Bubbles for Percentage Bars */ 
+/* Value Bubbles for Percentage Bars */
 
 .bubble {
     margin-left: .5em;
@@ -540,7 +540,7 @@ nav a:hover {
 
 .bookmarkIcon:hover,
 .bookmarkIcon:focus {
-    color: #9FA09E;    
+    color: #9FA09E;
 }
 
     /* Download Button */
@@ -555,7 +555,7 @@ nav a:hover {
     font-weight: 300;
     font-size: 1.125em;
     font-family: Roboto, sans-serif;
-    /* This is weird that I have to add 
+    /* This is weird that I have to add
     so much margin just to nudge this
     button down a bit */
     margin-top: 22em;
@@ -763,4 +763,36 @@ footer {
 
 .contactEmail:hover {
     color:#A2C331;
+}
+
+
+
+        /*  Input Error Tool Tip */
+
+/*.search {outline:none; }*/
+/*.search strong {line-height:30px;}*/
+/*.search:hover {text-decoration:none;}*/
+
+
+.search .siteSearchError {
+    margin-top: 55px;
+    margin-left: -560px;
+}
+
+.contentsOverlay .bookSearchError {
+    margin-top: -50px;
+    margin-left: 100px;
+}
+.search .siteSearchError,
+.contentsOverlay .bookSearchError {
+    z-index:10;
+    display: none;
+    padding: 14px 20px;
+    width: 400px;
+    line-height:16px;
+    border-radius: 3px;
+    /*display: inline;*/
+    position: absolute;
+    color: #EEE;
+    background: rgba(191, 63, 63, 0.74);
 }
