@@ -64,7 +64,7 @@ body {
 /* Header */
 
 .bannerContainer {
-    width: 50em;
+    max-width: 50em;
     margin: 2em auto 0;
 }
 
@@ -84,9 +84,28 @@ body {
 }
 
 .tagLine{
-    margin-top: .5em;
+    /*margin-top: .5em;*/
     color:#769210;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
  }
+
+@media (max-width: 518px) {
+    .tagLine {
+        /*max-width: 10rem;*/
+        margin-top: 1em;
+        /*text-align: center;*/
+    }
+}
+@media(min-width: 519px) {
+    .tagLine{
+        margin-top: .5em;
+        margin-left: initial;
+        margin-right: initial;
+        width: 100%;
+    }
+}
 
 .headLogo {
     float: left;
@@ -98,9 +117,11 @@ body {
 /* Search Box */
 
 .search {
-    width:44em;
-    margin: .5em auto 0;
+    max-width:44em;
+    margin: 3.5em auto 0;
     padding-bottom: 1.4em;
+
+    display: flex;
 }
 
 
@@ -117,19 +138,23 @@ input[type="text"] {
     font-weight: 300;
     outline: none;
     border-radius: 3px;
+    border-top-right-radius: 0;
+    borer-bottom-right-radius:0;
 }
 
 /* use another class on magnify image in search bar to add javascript click functionality later */
 
 .dem {
-    position: relative;
+    /*position: relative;*/
     left: 38.9em;
     top: 3.25em;
     height: 3.25em;
-    width: 3.875em;
+    max-width: 3.875em;
     background-color: #fff;
     border-radius: 3px;
     cursor: pointer;
+
+    order: 2;
 }
 
 .dem img {
@@ -168,7 +193,10 @@ input[type="text"] {
     font-weight: 400;
     font-size: 1.125em;
     font-family: "Roboto", sans-serif;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .navList {
@@ -479,6 +507,8 @@ nav a:hover {
 
 .purchaseLinks {
     clear: both;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .purchaseLinks a {
@@ -517,11 +547,13 @@ nav a:hover {
 }
 
 .purchaseLinks li:last-of-type {
-    float:right;
+    /*float:right;*/
     background-color: transparent;
     text-align: center;
     margin-right: 0;
     font-size: .875em;
+
+    margin-left: auto;
 }
 
 .purchaseLinks li:last-of-type a {
