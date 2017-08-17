@@ -139,7 +139,7 @@ input[type="text"] {
     outline: none;
     border-radius: 3px;
     border-top-right-radius: 0;
-    borer-bottom-right-radius:0;
+    border-bottom-right-radius:0;
 }
 
 /* use another class on magnify image in search bar to add javascript click functionality later */
@@ -159,9 +159,9 @@ input[type="text"] {
 
 .dem img {
     position: relative;
-    top: -.4em;
-    left: .3em;
-    max-width: 82%;
+    top: -.2em;
+    left: .1em;
+    max-width: 3.6rem;
 }
 
 /* Placeholder text color */
@@ -228,26 +228,38 @@ nav a:hover {
 
 .bookEntry {
     margin: 3em auto 15em;
-    width: 74em;
+    /*width: 74em;*/
+    max-width: 74em;
     height: 30em;
     background: #fff;
     border-radius: 3px;
 }
 
+.bookEntry div {
+    display: flex;
+    flex-flow: row wrap;
+}
 .lastBook {
   margin-bottom: 8em;
 }
 
 .bookImg {
-    float: right;
+    /*float: right;*/
     height: 30em;
     border-radius: 3px;
+
+    margin-left: auto;
+    /*order: 5;*/
 }
 
 .bookTitle {
     padding: 1em 0 .8em 1em;
     font-size: 1.8em;
     line-height:1.1em;
+
+    margin-right: auto;
+    order: 2;
+    /*flex: 0 1 100%;*/
 }
 
 .bookSummary {
@@ -282,6 +294,9 @@ nav a:hover {
     text-decoration: none;
     width: 35em;
     padding-left: 1em;
+
+    /*order: 3;*/
+    /*flex: 0 1 100%;*/
 }
 
 .bookLi {
