@@ -230,14 +230,15 @@ nav a:hover {
     margin: 3em auto 15em;
     /*width: 74em;*/
     max-width: 74em;
-    height: 30em;
+    /*height: 30em;*/
+    /*height: auto;*/
     background: #fff;
     border-radius: 3px;
 }
 
 .bookEntry div {
-    display: flex;
-    flex-flow: row wrap;
+    /*display: flex;*/
+    /*flex-flow: row wrap;*/
 }
 .lastBook {
   margin-bottom: 8em;
@@ -248,7 +249,10 @@ nav a:hover {
     height: 30em;
     border-radius: 3px;
 
-    margin-left: auto;
+    /*margin-left: auto !important;*/
+    /*margin-right: auto !important;*/
+    /*margin-left: 1em;*/
+    /*margin-left: auto;*/
     /*order: 5;*/
 }
 
@@ -257,17 +261,18 @@ nav a:hover {
     font-size: 1.8em;
     line-height:1.1em;
 
-    margin-right: auto;
-    order: 2;
+    /*margin-right: auto;*/
+    /*order: 2;*/
     /*flex: 0 1 100%;*/
 }
 
 .bookSummary {
-    float: left;
+    /*float: left;*/
     clear: left;
     margin-top: 1.5em;
-    width: 26em;
-    border-right: 1px #EDEDED solid ;
+    /*width: 26em;*/
+    /*max-width: 26em;*/
+    /*border-right: 1px #EDEDED solid ;*/
     padding: 0 2.5em 1em 1em ;
 }
 
@@ -292,7 +297,7 @@ nav a:hover {
 
 .bookOl {
     text-decoration: none;
-    width: 35em;
+    /*width: 35em;*/
     padding-left: 1em;
 
     /*order: 3;*/
@@ -524,6 +529,9 @@ nav a:hover {
     clear: both;
     display: flex;
     flex-flow: row wrap;
+
+    position: relative;
+    top: 13em;
 }
 
 .purchaseLinks a {
@@ -588,6 +596,74 @@ nav a:hover {
 .bookmarkIcon:hover,
 .bookmarkIcon:focus {
     color: #9FA09E;
+}
+
+@media screen and (min-width: 535px) {
+    .purchaseLinks {
+        top: 9em;
+    }
+}
+
+@media screen and (min-width: 877px) {
+    .purchaseLinks {
+        top: 5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bookImg {
+
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .bookImg {
+        float: right;
+        margin-left: 1em;
+    }
+    .bookSummary {
+        max-width: 26em;
+    }
+}
+
+@media screen and (min-width: 844px) {
+    .bookSummary {
+        float: left;
+        border-right: 1px #EDEDED solid ;
+    }
+
+    .bookImg {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1179px) {
+    .bookEntry {
+        /*height: 42.5em;*/
+    }
+    .statSection {
+        width: auto;
+    }
+    .percentSection {
+        display: inline-block;
+        /*clear: both;*/
+    }
+    .linkSection {
+        display: inline-block;
+        /*clear: both;*/
+    }
+    .purchaseLinks {
+        /*position: relative;*/
+        /*top: 5em;*/
+    }
+}
+@media screen and (min-width: 1180px) {
+    .bookEntry {
+        max-height: 30em;
+    }
+    .purchaseLinks {
+        top: .8em;
+    }
 }
 
     /* Download Button */
