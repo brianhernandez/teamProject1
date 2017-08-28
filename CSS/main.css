@@ -685,11 +685,20 @@ nav a:hover {
     margin-left: 3px;
     padding: .625em 3.125em;
     cursor: pointer;
+
+    position: relative;
+    top: 75px;
 }
 
 .digitalDownload:hover,
 .digitalDownload:focus {
     background-color: #9DD041;
+}
+
+@media screen and (min-width: 1180px) {
+    .digitalDownload {
+        position: initial;
+    }
 }
 
     /* Contents Overlay */
@@ -713,11 +722,22 @@ nav a:hover {
     background-color: #fff;
     border: 4px solid #C9E9E7;
     padding: 2.4375em 2.25em;
-    height: 24.6em;
-    width: 39em;
+    /*height: 24.6em;*/
+    /*width: 39em;*/
+
+    width: 50%;
+    position: relative;
+    right: 50px;
+    height: 41.5em;
 }
 
-
+@media screen and (min-width: 1180px) {
+    .contentsOverlay {
+        position: initial;
+        width: 39em;
+        height: 24.6em;
+    }
+}
 /* Placeholder text color for search bar in third book entry */
 
 .searchPlace::-webkit-input-placeholder {
@@ -755,7 +775,9 @@ nav a:hover {
 
 ol.resultsList {
     overflow: scroll;
-    height: 19em;
+    /*height: 19em;*/
+
+    height: 35em;
 }
 
 .resultsList li {
@@ -776,9 +798,19 @@ ol.resultsList {
 .tabsList {
     position: absolute;
     top: 230px;
-    right: -269px;
+    /*right: -269px;*/
+    right: -219px;
     transform: rotate(90deg);
     max-height: .625em;
+}
+
+@media screen and (min-width: 1180px) {
+    .tabsList {
+        right: -269px;
+    }
+    ol.resultsList {
+        height: 19em;
+    }
 }
 
 .tab {
@@ -822,6 +854,8 @@ ol.resultsList {
     text-align: center;
     font-size: 1.1em;
 
+    position: relative;
+    top: 150px;
 }
 
 /* Footer */
